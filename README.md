@@ -4,6 +4,8 @@
 
 Fiyota is a Vite + React (TypeScript) single-page application that helps users explore Toyota vehicles and make smarter financing choices. It provides a guided quiz, a data-driven dashboard with affordability and cost insights, and supporting flows like inventory, pre-approval, and applications.
 
+Check it out at : https://fiyota.vercel.app/
+
 ## Tech Stack
 
 - React 18 + TypeScript
