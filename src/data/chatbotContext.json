@@ -1,0 +1,147 @@
+{
+  "systemRole": "You are a helpful Toyota vehicle financing assistant. You help users understand their car purchase options, financing terms, and make informed decisions about vehicle purchases.",
+  "financingBasics": {
+    "leasingVsFinancing": {
+      "leasing": "Lower monthly payments, you return the car at the end of the term, mileage restrictions typically apply, ideal for those who like driving new cars every few years",
+      "financing": "You own the car at the end, higher monthly payments but you build equity, no mileage restrictions, better long-term value if you keep the car"
+    },
+    "downPaymentImpact": "Higher down payment reduces monthly payments and total interest paid. Recommended to put down 10-20% of the vehicle price.",
+    "interestRateFactors": "Interest rates are influenced by credit score, loan term, down payment amount, and current market rates. Better credit scores (720+) typically get rates 3-5%, while lower scores may see 8-15%.",
+    "loanTerms": {
+      "shorter": "36-48 months: Higher monthly payments but less total interest paid, build equity faster",
+      "moderate": "60 months: Balanced monthly payments and total cost, most popular option",
+      "longer": "72-84 months: Lower monthly payments but significantly more interest paid, may owe more than car's value (underwater)"
+    }
+  },
+  "vehicles": [
+    {
+      "id": "corolla-2023",
+      "name": "2023 Toyota Corolla LE",
+      "category": "Sedan",
+      "basePrice": 21550,
+      "description": "Reliable, fuel-efficient compact sedan perfect for daily commuting and small families",
+      "fuelEconomy": "32 city / 41 highway MPG",
+      "seating": "5 passengers",
+      "bestFor": "Budget-conscious buyers, first-time car buyers, commuters"
+    },
+    {
+      "id": "camry-2023",
+      "name": "2023 Toyota Camry LE",
+      "category": "Sedan",
+      "basePrice": 26220,
+      "description": "Midsize sedan with spacious interior, excellent reliability, and comfortable ride",
+      "fuelEconomy": "28 city / 39 highway MPG",
+      "seating": "5 passengers",
+      "bestFor": "Families, professionals, those wanting more space than compact sedans"
+    },
+    {
+      "id": "rav4-2023",
+      "name": "2023 Toyota RAV4 LE",
+      "category": "SUV",
+      "basePrice": 27575,
+      "description": "Popular compact SUV with great cargo space, available AWD, and high resale value",
+      "fuelEconomy": "27 city / 35 highway MPG",
+      "seating": "5 passengers",
+      "bestFor": "Small families, outdoor enthusiasts, those needing cargo flexibility"
+    },
+    {
+      "id": "4runner-2023",
+      "name": "2023 Toyota 4Runner SR5",
+      "category": "SUV",
+      "basePrice": 40155,
+      "description": "Rugged body-on-frame SUV with excellent off-road capability and towing capacity",
+      "fuelEconomy": "16 city / 19 highway MPG",
+      "seating": "5-7 passengers (optional third row)",
+      "bestFor": "Outdoor adventurers, those needing towing capability, off-road enthusiasts"
+    },
+    {
+      "id": "sienna-2023",
+      "name": "2023 Toyota Sienna LE",
+      "category": "Minivan",
+      "basePrice": 35385,
+      "description": "Hybrid minivan with excellent fuel economy, sliding doors, and maximum family-friendly features",
+      "fuelEconomy": "36 combined MPG",
+      "seating": "7-8 passengers",
+      "bestFor": "Large families, those prioritizing space and convenience features"
+    },
+    {
+      "id": "corolla-cross-2024",
+      "name": "2024 Toyota Corolla Cross Base",
+      "category": "SUV",
+      "basePrice": 23860,
+      "description": "Subcompact SUV combining Corolla's reliability with SUV versatility at an affordable price",
+      "fuelEconomy": "31 city / 33 highway MPG",
+      "seating": "5 passengers",
+      "bestFor": "First-time SUV buyers, city dwellers wanting higher seating position"
+    },
+    {
+      "id": "rav4-2024",
+      "name": "2024 Toyota RAV4 Base",
+      "category": "SUV",
+      "basePrice": 28675,
+      "description": "Updated RAV4 with latest safety features and technology, America's best-selling SUV",
+      "fuelEconomy": "27 city / 35 highway MPG",
+      "seating": "5 passengers",
+      "bestFor": "Families, safety-conscious buyers, those wanting latest features"
+    },
+    {
+      "id": "highlander-2024",
+      "name": "2024 Toyota Highlander Base",
+      "category": "SUV",
+      "basePrice": 39270,
+      "description": "Three-row midsize SUV with premium feel, advanced safety, and comfortable for long trips",
+      "fuelEconomy": "21 city / 29 highway MPG",
+      "seating": "8 passengers",
+      "bestFor": "Large families, those needing three rows without minivan stigma"
+    },
+    {
+      "id": "corolla-hybrid-2024",
+      "name": "2024 Toyota Corolla Hybrid Base",
+      "category": "Sedan",
+      "basePrice": 23500,
+      "description": "Hybrid version of Corolla with exceptional fuel economy and low running costs",
+      "fuelEconomy": "53 city / 52 highway MPG",
+      "seating": "5 passengers",
+      "bestFor": "Eco-conscious buyers, high-mileage commuters, those wanting lowest fuel costs"
+    },
+    {
+      "id": "tundra-2024",
+      "name": "2024 Toyota Tundra Base",
+      "category": "Truck",
+      "basePrice": 39965,
+      "description": "Full-size pickup truck with powerful twin-turbo V6, excellent towing, and modern interior",
+      "fuelEconomy": "18 city / 24 highway MPG",
+      "seating": "5-6 passengers",
+      "bestFor": "Those needing towing/hauling capability, contractors, outdoor enthusiasts"
+    }
+  ],
+  "affordabilityGuidelines": {
+    "monthlyPaymentRule": "Your total monthly vehicle payment (including insurance) should not exceed 15-20% of your monthly gross income",
+    "downPaymentRecommendation": "Aim for 10-20% down payment to avoid being underwater on your loan",
+    "totalCostRule": "The total cost of the vehicle should not exceed 35% of your annual gross income",
+    "emergencyFund": "Ensure you have 3-6 months of expenses saved before taking on a car payment"
+  },
+  "creditScoreImpact": {
+    "excellent": "760-850: Qualify for best rates (3-5%), lowest monthly payments, best loan terms",
+    "good": "700-759: Good rates (5-7%), should have no trouble getting approved",
+    "fair": "650-699: Higher rates (7-11%), may need larger down payment",
+    "poor": "Below 650: Significantly higher rates (11-15%+), consider improving credit first or larger down payment"
+  },
+  "financialTips": [
+    "Consider total cost of ownership including insurance, maintenance, fuel, and registration fees",
+    "Get pre-approved for financing to know your budget before shopping",
+    "Compare lease vs finance based on how long you plan to keep the vehicle",
+    "Factor in trade-in value to reduce the amount you need to finance",
+    "Avoid extending loan terms beyond 60 months to prevent being underwater",
+    "Review and negotiate the interest rate - even 0.5% difference saves hundreds over the loan term",
+    "Consider certified pre-owned (CPO) Toyota vehicles for better value",
+    "Take advantage of manufacturer incentives and special financing offers"
+  ],
+  "commonQuestions": {
+    "whenToLease": "Lease if you drive less than 12,000 miles/year, want a new car every 2-3 years, and prioritize lower monthly payments",
+    "whenToFinance": "Finance if you drive high mileage, want to build equity, plan to keep the car 5+ years, or want no mileage restrictions",
+    "bestFirstCar": "Corolla or Corolla Hybrid - affordable, reliable, great fuel economy, low insurance costs",
+    "bestFamilyCar": "RAV4 for 2-kid families, Highlander for larger families, Sienna if you prioritize space and features",
+    "tradingInVsPrivateSale": "Private sale typically gets 10-15% more but requires more effort. Trade-in is convenient and may reduce sales tax in some states"
+  }
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toyota Financial Services - Smart Vehicle Financing Tool</title>
+    <meta name="description" content="Find personalized Toyota financing and leasing options based on your income and credit score. Get payment simulations, compare plans, and make smart financial decisions." />
+    <meta name="author" content="Toyota" />
+
+    <meta property="og:title" content="Toyota Financial Services - Smart Vehicle Financing Tool" />
+    <meta property="og:description" content="Find personalized Toyota financing and leasing options based on your income and credit score. Get payment simulations, compare plans, and make smart financial decisions." />
+    <meta property="og:type" content="website" />
+    <!-- Removed Lovable OG image -->
+    <meta property="og:image" content="/favicon.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Removed Lovable Twitter site/image -->
+    <meta name="twitter:image" content="/favicon.svg" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <!-- Leaflet (OSM) for map rendering -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- ElevenLabs Convai Widget -->
+    <div id="convai-root" style="position: fixed; bottom: 16px; right: 16px; z-index: 9999;">
+      <elevenlabs-convai agent-id="agent_1901k7wm193te85rvdft2garmrkj"></elevenlabs-convai>
+    </div>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </body>
+</html>
