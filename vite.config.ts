@@ -7,6 +7,7 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 5000,
+    strictPort: true,
     proxy: {
       "/api/carfax": {
         target: "https://helix.carfax.com",
