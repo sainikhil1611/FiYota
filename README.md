@@ -46,13 +46,19 @@ manual/container smoke checks (see Deployment below).
 
 ## Deployment
 
-Build the production image: `docker build -t fiyota .`
-Run it: `docker run --env-file .env -p 8080:80 fiyota` → open http://localhost:8080
+Build the production image, passing the Gemini key as a build arg:
+`docker build --build-arg VITE_GEMINI_API_KEY=your_api_key -t fiyota .`
+(optionally also `--build-arg VITE_GEMINI_MODEL=your_model`)
+Run it: `docker run -p 8080:80 fiyota` → open http://localhost:8080
 
-Note: since `VITE_GEMINI_API_KEY` is baked into the JS bundle at *build*
-time (see "Known limitations" below), `--env-file .env` at `docker run`
-time has no effect on the Gemini key — Vite reads a `.env` file present in
-the build context automatically at `docker build` time instead.
+Note: `.env` is excluded from the build context by `.dockerignore` (by
+design, to avoid baking arbitrary local env files into images), so a local
+`.env` file is never read at `docker build` time and `--env-file` at
+`docker run` time has no effect on the Gemini key — `VITE_GEMINI_API_KEY`
+is baked into the JS bundle at *build* time via the `--build-arg` above
+(see "Known limitations" below for why that means the key is effectively
+public once deployed). The build succeeds without the build arg too; the
+app just runs with the chatbot/Gemini features disabled.
 
 This container runs on any host (Fly.io, Render, a VPS with Docker) — see
 [DEPLOYMENT.md](../DEPLOYMENT.md) in the Projects root for the full walkthrough.
