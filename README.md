@@ -11,6 +11,8 @@ it's a pure static SPA (originally generated with Lovable.dev) that calls
 third-party APIs directly from the browser, with a `/api/carfax/*` reverse
 proxy for the Carfax Helix API.
 
+Live demo: https://fiyota.vercel.app/
+
 ## Quick start (devcontainer — recommended)
 
 1. Prereqs: [Docker](https://docs.docker.com/get-docker/), [VS Code](https://code.visualstudio.com/) + the "Dev Containers" extension.
